@@ -1,0 +1,102 @@
+.section-1{
+	width: 100%;
+	height: 600px;
+	background-color: black;
+	overflow: hidden;
+
+}
+
+.section-1-container{
+	background-color: black;
+	position: relative;
+
+}
+
+.img-1{
+	width: 700px;
+	position: absolute;;
+	top: 400px;
+	left: 30%;	
+	z-index: 10;
+
+
+	animation: nightking 15s infinite linear alternate;
+}
+
+@keyframes nightking{
+	from{ top:400px }
+	to{top: 200px}
+
+}
+
+.img-2{
+	width: 300px;
+	position: absolute;
+	z-index: 3;
+	filter: blur(2px);
+	left: 40%;
+  
+
+	transition: 15s;
+
+}
+
+.img-2:hover{
+	filter: blur(0px);
+	width: 100%;
+	transform: rotate(45deg);
+}
+
+
+.img-3{
+	position: absolute;
+	top: 600px;
+	width: 100%;
+	z-index: 4;
+
+	animation: zombiehands 15s infinite 2s linear alternate;
+
+}
+
+@keyframes zombiehands {
+	from{top: 600px}
+	to{top: 300px}
+}
+
+.img-4{
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.img-5{
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+
+	animation: snow 2s infinite linear alternate;
+}
+
+@keyframes snow {
+	from{ 
+		opacity: 25%;}
+
+	to{ scale:5 5;
+		opacity: 100%;}
+}
+
+.img-6{
+	position: absolute;
+	width: 100%;
+	top: 300px;
+	z-index:6 ;
+	filter: blur(3px);
+
+	transition: 6s;
+}
+
+.img-6:hover{
+	top: 200px;
+	filter: blur(0);
+	scale: 5 5;
+}
